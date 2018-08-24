@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.six.jd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jd_buy_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jd_buy_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppThem">
+        <activity android:name=".ShowActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.mine.activity.LoginActivity" />
+        <activity android:name=".ui.mine.activity.RegActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.classify.activity.QueryActivity" />
+        <activity android:name=".ui.classify.activity.XQActivity" />
+        <activity android:name=".ui.classify.activity.ClassAddCartActivity" />
+        <activity android:name=".ui.mine.activity.OutLoginActivity" />
+        <activity android:name=".ui.classify.activity.DingDanActivity"></activity>
+    </application>
+
+</manifest>

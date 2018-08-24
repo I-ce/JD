@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_box_layout"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:background="@drawable/b_input"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/home__iv_sou"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_search" />
+    <AutoCompleteTextView
+        android:id="@+id/home__et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="32dp"
+        android:layout_toRightOf="@id/home__iv_sou"
+        android:background="#00000000"
+        android:completionThreshold="1"
+        android:dropDownWidth="match_parent"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:hint="车型/产品型号/零件名称"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#474646"
+        android:textColorHint="#b6b6b6"
+        android:textSize="15sp" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/search_clean"
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="6dp"
+        android:visibility="gone"
+        android:src="@drawable/flight_text_cancel_pressed"
+        android:scaleType="centerInside" />
+</RelativeLayout>

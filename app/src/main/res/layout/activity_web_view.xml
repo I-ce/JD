@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.classify.activity.WebViewActivity">
+
+<com.stx.xhb.xbanner.XBanner
+    app:AutoPlayTime="3000"
+    android:layout_weight="7"
+    android:id="@+id/class_xq_xbanner"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"></com.stx.xhb.xbanner.XBanner>
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/class_xq_title"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <TextView
+        android:textColor="#f00"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:id="@+id/class_xq_price"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <RadioGroup
+        android:layout_weight="1"
+        android:id="@+id/class_xq_radio_Group"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RadioButton
+            android:id="@+id/class_xq_btn_chaxun"
+            android:drawableTop="@drawable/shopcar"
+            android:button="@null"
+            android:text="购物车"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/class_xq_btn_add"
+            android:background="#EFC532"
+            android:button="@null"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/dingdan"
+            android:background="#E4383D"
+            android:button="@null"
+            android:gravity="center"
+            android:text="立即购买"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+</LinearLayout>

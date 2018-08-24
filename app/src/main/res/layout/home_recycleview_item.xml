@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/home_recy_item_iocn"
+        android:layout_width="200dp"
+        android:layout_height="160dp" />
+    <TextView
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_below="@id/home_recy_item_iocn"
+        android:id="@+id/home_recy_item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:gravity="center"
+        android:textColor="#ccc"
+        android:id="@+id/home_recy_item_barginprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_recy_item_price"
+         />
+</RelativeLayout>
